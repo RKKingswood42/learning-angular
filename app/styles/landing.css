@@ -42,14 +42,8 @@ body.landing {
      position: relative;
      padding: 3rem;
      text-align: center;
-     opacity: 0;
-     -webkit-transform: scaleX(0.9) translateY(2rem);
-     -moz-transform: scaleX(0.9) translateY(2rem);
-     transform: scaleX(0.9) translateY(2rem);
-     -webkit-transition: all .5s ease-in-out;
-     -moz-transition: all .5s ease-in-out;
-     transition: all .5s ease-in-out;
- }
+     opacity: 1;
+}
  
 .point:nth-of-type(2) {
       transition-delay: .75s;
