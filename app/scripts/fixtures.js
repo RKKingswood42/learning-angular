@@ -3,7 +3,7 @@ var albumPersistance = {
     artist: 'The Persistance',
     label: 'LizWarren Media',
     year: '2017',
-    albumArtUrl: 'assets/images/album_covers/01.png',
+    albumArtUrl: '/assets/images/album_covers/01.png',
     songs: [
         {title: 'Nevertheless', duration: '161.71', audioUrl: 'assets/music/blue'},
         {title: '(I won\'t) Stand Down', duration: '103.96', audioUrl: 'assets/music/green'},
