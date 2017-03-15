@@ -41,19 +41,30 @@ var albumHecticGlow = {
     songs: [
         {title: 'French the Llama', duration: '2:32'},
         {title: 'Brandish', duration: '3:49'},
-        {title: 'Who is Hank?', duration: '0:12'},
+        {title: 'Who the eff is Hank?', duration: '0:12'},
         {title: 'Complexly', duration: '2:55'},
         {title: 'Liking Things', duration: '4:21'}
     ]
 };
         Fixtures.getAlbum = function() {
          return albumPersistance;
-     };
+            };
+        
+        Fixtures.getCollection = function(numberOfAlbums) {
+            var collection = [];
+            for (var i =0; i<numberOfAlbums; i++) {
+                collection.push(angular.copy(albumPersistance));
+            }
+            return collection;
+        };
         
         return Fixtures;
     }
+    
+    
 
     angular
         .module('blocJams')
         .factory('Fixtures', Fixtures);
 })();
+
