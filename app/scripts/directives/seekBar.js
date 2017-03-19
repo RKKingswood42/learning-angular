@@ -29,6 +29,18 @@
                     return {width: percentString()};
                 };
                 
+                var percentStrThumb = function () {
+                    var value = scope.value;
+                    var max = scope.max;
+                    var percent = value / max * 100;
+                    percent = percent - 36;
+                    return percent + "%";
+                };
+                
+                scope.thumbStyle = function() {
+                    return {marginLeft: percentStrThumb()};
+                };
+                
                 scope.onClickSeekBar = function(event) {
                     var percent = calculatePercent(seekBar, event);
                     scope.value = percent * scope.max;
