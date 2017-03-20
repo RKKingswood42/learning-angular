@@ -87,7 +87,7 @@
 * @desc Current volume (of 100) of currently playing song
 * @type {Number}
 */     
-        SongPlayer.volume = null;
+        SongPlayer.volume = 80;
 /**
 * @function SongPlayer.pause()
 * @desc pauses current audio file and assigns that song's 'playing' attribute as false.
